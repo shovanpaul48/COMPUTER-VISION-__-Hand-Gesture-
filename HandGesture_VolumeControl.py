@@ -18,7 +18,8 @@ def main():
             cam = cv2.VideoCapture(0)
             break
         elif x==2:
-            path = str(input("Enter the file path : "))
+            # single slash provide assertion error
+            path = str(input("Enter the file path (Enter double slash between two folder ) : "))
             cam = cv2.VideoCapture(path)
             break
         else:
